@@ -1,0 +1,109 @@
+﻿<Window x:Class="Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Test"
+        mc:Ignorable="d"
+        Title="测试程序" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="230"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <Label>选择OPC类型:</Label>
+            <RadioButton Margin="5" Name="OpcUa" GroupName="opcType"  Checked="OpcUa_Checked">OPC UA</RadioButton>
+            <RadioButton Margin="5" Name="OpcDa" GroupName="opcType" IsChecked="True" Checked="OpcUa_Checked">OPC DA</RadioButton>
+            <Label Margin="15,3,5,3">URL:</Label>
+            <TextBox Name="TbUrl" Width="400" Margin="5">opc.tcp://zhangliwen-PC:49320</TextBox>
+            <Button  Margin="5" Name="BtnBrowseServer" Click="BtnBrowseServer_Click">浏览</Button>
+            <Button  Margin="5" Name="BtnConnect" Visibility="{Binding ElementName=OpcDa, 
+                    Path=IsChecked,Converter={StaticResource BoolToVisibilityConverter}}"
+                     Click="BtnConnect_Click" Width="50">连接</Button>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <ListBox Name="LbServer" DisplayMemberPath="Description" SelectionChanged="LbServer_SelectionChanged"></ListBox>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button Name="BtnAddAll" Click="BtnAddAll_Click">添加服务端所有变量</Button>
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <Label>Tag ServerID(格式为:通道.设备.文件夹.文件夹.变量名):</Label>
+                    <TextBox Padding="3" Name="TbTagServerId"></TextBox>
+                </StackPanel>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <GroupBox Header="读变量">
+                        <StackPanel>
+                            <Button Name="BtnOperate" Tag="1" Click="BtnOperate_Click">同步读</Button>
+                            <Button Tag="2" Click="BtnOperate_Click">异步读</Button>
+                            <Label Name="LbReadValue"></Label>
+                        </StackPanel>
+                    </GroupBox>
+                    <GroupBox Grid.Column="1" Header="写变量">
+                        <StackPanel>
+                            <Button Tag="3" Click="BtnOperate_Click">同步写</Button>
+                            <Button Tag="4" Click="BtnOperate_Click">异步写</Button>
+                            <TextBox Name="LbWriteValue"></TextBox>
+                        </StackPanel>
+                    </GroupBox>
+                    <GroupBox Grid.Column="2" Header="订阅">
+                        <Button Tag="5" Click="BtnOperate_Click">添加订阅</Button>
+                    </GroupBox>
+                </Grid>
+            </Grid>
+            
+            <Grid Grid.Column="1" Visibility="{Binding ElementName=OpcUa, Path=IsChecked,
+                Converter={StaticResource BoolToVisibilityConverter}}" Margin="5" ShowGridLines="True">
+                <GroupBox Header="用户信息">
+                    <StackPanel Orientation="Vertical">
+                        <RadioButton Name="RbNoneLogin" GroupName="RbLoginStyle" IsChecked="True">匿名登录</RadioButton>
+                        <RadioButton Name="RbUserLogin" GroupName="RbLoginStyle">用户名密码登录</RadioButton>
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <Label>用户名:</Label>
+                            <TextBox Name="TbUser" Width="100" 
+                                 IsEnabled="{Binding ElementName=RbUserLogin, Path=IsChecked}"></TextBox>
+                        </StackPanel >
+                        <StackPanel Margin="8" Orientation="Horizontal">
+                            <Label>密 码 :</Label>
+                            <PasswordBox Name="TbPass" Width="100" 
+                                     IsEnabled="{Binding ElementName=RbUserLogin, Path=IsChecked}"></PasswordBox>
+                        </StackPanel>
+                        <Button Margin="10" Name="BtnUaConnect" Click="BtnConnect_Click">连接</Button>
+                    </StackPanel>
+                </GroupBox>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="3">
+            <DataGrid ColumnWidth="*" Name="DgTagInfo" AutoGenerateColumns="False" CanUserAddRows="False"
+                     SelectionChanged="DgTagInfo_SelectionChanged">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Path=ID}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="TagName" Binding="{Binding Path=TagName}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="ServerId" Binding="{Binding Path=ServerID}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Value" Binding="{Binding Path=Value}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Quality" Binding="{Binding Path=Quality}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Timessnamp" Binding="{Binding Path=Timesnamp}"></DataGridTextColumn>
+                </DataGrid.Columns>
+                
+            </DataGrid>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,8 @@
+E:\项目\OpcHelper\OpcUaClientHelper\bin\Release\netstandard2.0\OpcUaClientHelper.deps.json
+E:\项目\OpcHelper\OpcUaClientHelper\bin\Release\netstandard2.0\OpcUaClientHelper.dll
+E:\项目\OpcHelper\OpcUaClientHelper\bin\Release\netstandard2.0\OpcUaClientHelper.pdb
+E:\项目\OpcHelper\OpcUaClientHelper\obj\Release\netstandard2.0\OpcUaClientHelper.csproj.CoreCompileInputs.cache
+E:\项目\OpcHelper\OpcUaClientHelper\obj\Release\netstandard2.0\OpcUaClientHelper.AssemblyInfoInputs.cache
+E:\项目\OpcHelper\OpcUaClientHelper\obj\Release\netstandard2.0\OpcUaClientHelper.AssemblyInfo.cs
+E:\项目\OpcHelper\OpcUaClientHelper\obj\Release\netstandard2.0\OpcUaClientHelper.dll
+E:\项目\OpcHelper\OpcUaClientHelper\obj\Release\netstandard2.0\OpcUaClientHelper.pdb

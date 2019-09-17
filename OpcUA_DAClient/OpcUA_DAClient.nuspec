@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Lw.zhang.OpcClient.UA.DA</id>
+    <version>1.0.0.0</version>
+    <title>Opc Client UA  DA</title>
+    <authors>zhangliwen</authors>
+    <owners>zhangliwen</owners>
+    <!--<licenseUrl>https://blog.csdn.net/liwen9016</licenseUrl>-->
+    <projectUrl>https://blog.csdn.net/liwen9016</projectUrl>
+    <!--<iconUrl>g14.ico</iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>包装了Opc.Ua.Core和opcdaauto.dll,方便了Opc Client的开发</description>
+    <releaseNotes>初始版本</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>Opc Ua Client ; Opc Da Client </tags>
+  </metadata>
+  <files>
+    <file src=".\bin\Release\*" target="lib\net461"/>
+  </files>
+</package>

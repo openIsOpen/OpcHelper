@@ -1,0 +1,839 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OpcUA_DAClient</name>
+    </assembly>
+    <members>
+        <member name="M:Zlw.OpcClient.OpcClient.Connect(Zlw.OpcClient.OpcServer)">
+            <summary>
+            连接服务器
+            </summary>
+            <param name="server"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcClient.Config(Zlw.OpcClient.Configuration)">
+            <summary>
+            配置访问参数
+            </summary>
+            <param name="cfg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcClient.AddSubscription(Zlw.OpcClient.TagItem)">
+            <summary>
+            添加指定订阅
+            </summary>
+            <param name="tag">要添加订阅的变量</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcClient.AddSubscription(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <summary>
+            添加订阅
+            </summary>
+            <param name="tags">要添加订阅的变量</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcClient.RemoveSubscription(Zlw.OpcClient.TagItem)">
+            <summary>
+            指定变量移除订阅
+            </summary>
+            <param name="tag">要移除订阅的变量</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcClient.RemoveSubscription(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <summary>
+            指定变量移除订阅
+            </summary>
+            <param name="tags">要移除订阅的变量</param>
+            <returns>成功移除订阅的变量</returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcClient.RemoveSubscription">
+            <summary>
+            移除所有哦变量订阅
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcClient.Disconnect">
+            <summary>
+            断开与服务器的连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcClient.Read(Zlw.OpcClient.TagItem)">
+            <summary>
+            读变量
+            </summary>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcClient.Read(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <summary>
+            读多个变量
+            </summary>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcClient.AsyncRead(Zlw.OpcClient.TagItem)">
+            <summary>
+            同步读变量
+            </summary>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcClient.AsyncRead(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <summary>
+            同步读多个变量
+            </summary>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcClient.Write(Zlw.OpcClient.TagItem)">
+            <summary>
+            写变量
+            </summary>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcClient.Write(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <summary>
+            写多个变量
+            </summary>
+            <param name="tags"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcClient.AsyncWrite(Zlw.OpcClient.TagItem)">
+            <summary>
+            异步写变量
+            </summary>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcClient.AsyncWrite(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <summary>
+            异步写多个变量
+            </summary>
+            <param name="tags"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcClient.AddTag(Zlw.OpcClient.TagItem)">
+            <summary>
+            添加变量
+            </summary>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcClient.AddTag(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <summary>
+            添加多个变量
+            </summary>
+            <param name="tags"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcClient.RemoveTag(Zlw.OpcClient.TagItem)">
+            <summary>
+            移除变量
+            </summary>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcClient.RemoveTag(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <summary>
+            移除多个变量
+            </summary>
+            <param name="tags"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcClient.GetItems">
+            <summary>
+            获取服务端所有变量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcClient.GetUserItems">
+            <summary>
+            获取服务端所有用户变量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcClient.GetSysItems">
+            <summary>
+            获取服务端所有系统变量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.Connect(Zlw.OpcClient.OpcServer)">
+            <summary>
+            连接服务器
+            </summary>
+            <param name="server"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Zlw.OpcClient.OpcDaClient.IsConnected">
+            <inheritdoc />
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.Config(Zlw.OpcClient.Configuration)">
+            <summary>
+            配置，暂未实现
+            </summary>
+            <param name="cfg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.AddSubscription(Zlw.OpcClient.TagItem)">
+            <summary>
+            添加订阅
+            </summary>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.AddSubscription(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <summary>
+            批量添加订阅
+            </summary>
+            <param name="tags"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.RemoveSubscription(Zlw.OpcClient.TagItem)">
+            <summary>
+            取消订阅
+            </summary>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.RemoveSubscription(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <summary>
+            批量取消订阅
+            </summary>
+            <param name="tags"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.RemoveSubscription">
+            <summary>
+            暂未实现
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.Disconnect">
+            <summary>
+            断开连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.Read(Zlw.OpcClient.TagItem)">
+            <summary>
+            同步读
+            </summary>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.Read(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <summary>
+            同步读
+            </summary>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.AsyncRead(Zlw.OpcClient.TagItem)">
+            <summary>
+            异步读
+            </summary>
+            <param name="tag"></param>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.AsyncRead(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <summary>
+            异步读
+            </summary>
+            <param name="tag"></param>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.Write(Zlw.OpcClient.TagItem)">
+            <summary>
+            同步写
+            </summary>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.Write(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <summary>
+            同步写
+            </summary>
+            <param name="tags"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.AsyncWrite(Zlw.OpcClient.TagItem)">
+            <summary>
+            异步写
+            </summary>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.AsyncWrite(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <summary>
+            异步写
+            </summary>
+            <param name="tags"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.AddTag(Zlw.OpcClient.TagItem)">
+            <summary>
+            等同于添加订阅
+            </summary>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.AddTag(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <summary>
+            等同于添加订阅
+            </summary>
+            <param name="tags"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.RemoveTag(Zlw.OpcClient.TagItem)">
+            <summary>
+            等同于移除订阅
+            </summary>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.RemoveTag(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <summary>
+            等同于移除订阅
+            </summary>
+            <param name="tags"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.FindServer(System.String)">
+            <summary>
+            发现服务器
+            </summary>
+            <param name="serverUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.GetItems">
+            <summary>
+            获取服务端所有变量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.GetUserItems">
+            <summary>
+            获取服务端用户变量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.GetSysItems">
+            <summary>
+            获取服务端系统变量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.GetServerAllTag(OpcDaHelper.BLModal)">
+            <summary>
+            获取服务端所有变量
+            </summary>
+            <param name="bl"></param>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.GetServerUserTag(OpcDaHelper.BLModal)">
+            <summary>
+            获取服务端用户变量
+            </summary>
+            <param name="bl"></param>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.GetServerSysTag(OpcDaHelper.BLModal)">
+            <summary>
+            获取服务端系统变量
+            </summary>
+            <param name="bl"></param>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcDaClient.GetServerItem">
+            <summary>
+            获取服务端条目
+            </summary>
+        </member>
+        <member name="P:Zlw.OpcClient.OpcServer.Ip">
+            <summary>
+            服务器IP
+            </summary>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.Connect(Zlw.OpcClient.OpcServer)">
+            <summary>
+            连接服务器
+            </summary>
+            <param name="server"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Zlw.OpcClient.OpcUaClient.IsConnected">
+            <inheritdoc />
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.Config(Zlw.OpcClient.Configuration)">
+            <summary>
+            配置连接
+            </summary>
+            <param name="cfg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.AddSubscription(Zlw.OpcClient.TagItem)">
+            <summary>
+            添加订阅
+            </summary>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.AddSubscription(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <summary>
+            批量添加订阅
+            </summary>
+            <param name="tags">要添加订阅的变量</param>
+            <returns>成功添加的变量</returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.RemoveSubscription(Zlw.OpcClient.TagItem)">
+            <summary>
+            订阅内移除变量
+            </summary>
+            <param name="tag">要移除的变量</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.RemoveSubscription(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <summary>
+            订阅内批量移除变量
+            </summary>
+            <param name="tags"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.RemoveSubscription">
+            <summary>
+            移除所有变量的订阅
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.Disconnect">
+            <summary>
+            断开连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.Read(Zlw.OpcClient.TagItem)">
+            <summary>
+            读一个变量
+            </summary>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.Read(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <summary>
+            读多个变量
+            </summary>
+            <param name="tag"></param>
+            <returns>返回状态为GOOD的变量</returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.AsyncRead(Zlw.OpcClient.TagItem)">
+            <summary>
+            异步读
+            </summary>
+            <param name="tag"></param>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.AsyncRead(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <summary>
+            异步读
+            </summary>
+            <param name="tag"></param>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.Write(Zlw.OpcClient.TagItem)">
+            <summary>
+            写变量
+            </summary>
+            <param name="tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.Write(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <inheritdoc />
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.AsyncWrite(Zlw.OpcClient.TagItem)">
+            <inheritdoc />
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.AsyncWrite(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <inheritdoc />
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.AddTag(Zlw.OpcClient.TagItem)">
+            <inheritdoc />
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.AddTag(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <inheritdoc />
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.RemoveTag(Zlw.OpcClient.TagItem)">
+            <inheritdoc />
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.RemoveTag(System.Collections.Generic.IList{Zlw.OpcClient.TagItem})">
+            <inheritdoc />
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.CallBack_Read(System.IAsyncResult)">
+            <summary>
+            异回调函数
+            </summary>
+            <param name="ar"></param>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.Zlw#OpcClient#OpcClient#GetItems">
+            <summary>
+            获取服务端所有变量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.GetUserItems">
+            <summary>
+            获取服务端用户变量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.GetSysItems">
+            <summary>
+            获取服务端系统变量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zlw.OpcClient.OpcUaClient.GetAllNode">
+            <summary>
+            获取所有节点,包括变量
+            </summary>
+        </member>
+        <member name="P:Zlw.OpcClient.OpcUaServer.Url">
+            <summary>
+            Server endpoint Url
+            </summary>
+        </member>
+        <member name="P:Zlw.OpcClient.OpcUaServer.SecurityPolicy">
+            <summary>
+            连接时要使用的安全策略
+            </summary>
+        </member>
+        <member name="P:Zlw.OpcClient.OpcUaServer.MsgSecurityMode">
+            <summary>
+            消息安全模式
+            </summary>
+        </member>
+        <member name="P:Zlw.OpcClient.OpcUaServer.UserAuth">
+            <summary>
+            是否启用用户验证
+            </summary>
+        </member>
+        <member name="P:Zlw.OpcClient.OpcUaServer.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Zlw.OpcClient.OpcUaServer.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Zlw.OpcClient.OpcUaServer.SubscriptionPublishingInterval">
+            <summary>
+            订阅发布时间
+            </summary>
+        </member>
+        <member name="T:Zlw.OpcClient.TagItem.CallBackType">
+            <summary>
+            回调函数类型
+            </summary>
+        </member>
+        <member name="P:Zlw.OpcClient.TagItem.Id">
+            <summary>
+            变量ID
+            </summary>
+        </member>
+        <member name="P:Zlw.OpcClient.TagItem.NameSpace">
+            <summary>
+            UA连接服务端命名空间
+            </summary>
+        </member>
+        <member name="P:Zlw.OpcClient.TagItem.ServerId">
+            <summary>
+            变量在Server上注册所需id
+            </summary>
+        </member>
+        <member name="P:Zlw.OpcClient.TagItem.Name">
+            <summary>
+            变量名
+            </summary>
+        </member>
+        <member name="P:Zlw.OpcClient.TagItem.Value">
+            <summary>
+            变量值
+            </summary>
+        </member>
+        <member name="P:Zlw.OpcClient.TagItem.ValueToWrite">
+            <summary>
+            要写入的值
+            </summary>
+        </member>
+        <member name="P:Zlw.OpcClient.TagItem.DataType">
+            <summary>
+            数据类型
+            </summary>
+        </member>
+        <member name="P:Zlw.OpcClient.TagItem.Timestamp">
+            <summary>
+            时间戳
+            </summary>
+        </member>
+        <member name="P:Zlw.OpcClient.TagItem.Quality">
+            <summary>
+            质量
+            </summary>
+        </member>
+        <member name="P:Zlw.OpcClient.TagItem.SampleRate">
+            <summary>
+            采样频率
+            </summary>
+        </member>
+        <member name="P:Zlw.OpcClient.TagItem.CallBack">
+            <summary>
+            订阅事件
+            </summary>
+        </member>
+        <member name="P:Zlw.OpcClient.TagItem.CBType">
+            <summary>
+            回调函数类型
+            </summary>
+        </member>
+        <member name="P:Zlw.OpcClient.TagItem.NodeId">
+            <summary>
+            仅UA方式有效
+            </summary>
+        </member>
+        <member name="M:Zlw.OpcClient.TagItem.GetNodeId">
+            <summary>
+            获取Nodeid，仅UA方式有效
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Siemens.UAClientHelper.UAClientHelperAPI.mSession">
+            <summary> 
+            Keeps a session with an UA server.
+            </summary>
+        </member>
+        <member name="F:Siemens.UAClientHelper.UAClientHelperAPI.mApplicationConfig">
+            <summary> 
+            Specifies this application.
+            </summary>
+        </member>
+        <member name="P:Siemens.UAClientHelper.UAClientHelperAPI.Session">
+            <summary>
+            Provides the session being established with an OPC UA server.
+            </summary>
+        </member>
+        <member name="F:Siemens.UAClientHelper.UAClientHelperAPI.CertificateValidationNotification">
+            <summary>
+            Provides the event handling for server certificates.
+            </summary>
+        </member>
+        <member name="F:Siemens.UAClientHelper.UAClientHelperAPI.ItemChangedNotification">
+            <summary>
+            Provides the event for value changes of a monitored item.
+            </summary>
+        </member>
+        <member name="F:Siemens.UAClientHelper.UAClientHelperAPI.KeepAliveNotification">
+            <summary>
+            Provides the event for KeepAliveNotifications.
+            </summary>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.FindServers(System.String)">
+            <summary>Finds Servers based on a discovery url</summary>
+            <param name="discoveryUrl">The discovery url</param>
+            <returns>ApplicationDescriptionCollection containing found servers</returns>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.GetEndpoints(System.String)">
+            <summary>Finds Endpoints based on a server's url</summary>
+            <param name="discoveryUrl">The server's url</param>
+            <returns>EndpointDescriptionCollection containing found Endpoints</returns>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.Connect(System.String,System.String,Opc.Ua.MessageSecurityMode,System.Boolean,System.String,System.String)">
+            <summary>Establishes the connection to an OPC UA server and creates a session using a server url.</summary>
+            <param name="url">The Url of the endpoint as string.</param>
+            <param name="secPolicy">The security policy to use</param>
+            <param name="msgSecMode">The message security mode to use</param>
+            <param name="userAuth">Autheticate anonymous or with username and password</param>
+            <param name="userName">The user name</param>
+            <param name="password">The password</param>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.Connect(Opc.Ua.EndpointDescription,System.Boolean,System.String,System.String)">
+            <summary>Establishes the connection to an OPC UA server and creates a session using an EndpointDescription.</summary>
+            <param name="endpointDescription">The EndpointDescription of the server's endpoint</param>
+            <param name="userAuth">Autheticate anonymous or with username and password</param>
+            <param name="userName">The user name</param>
+            <param name="password">The password</param>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.Disconnect">
+            <summary>Closes an existing session and disconnects from the server.</summary>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.BrowseRoot">
+            <summary>Browses the root folder of an OPC UA server.</summary>
+            <returns>ReferenceDescriptionCollection of found nodes</returns>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.BrowseNode(Opc.Ua.ReferenceDescription)">
+            <summary>Browses a node ID provided by a ReferenceDescription</summary>
+            <param name="refDesc">The ReferenceDescription</param>
+            <returns>ReferenceDescriptionCollection of found nodes</returns>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.Subscribe(System.Int32)">
+            <summary>Creats a Subscription object to a server</summary>
+            <param name="publishingInterval">The publishing interval</param>
+            <returns>Subscription</returns>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.AddMonitoredItem(Opc.Ua.Client.Subscription,System.String,System.String,System.Int32)">
+            <summary>Ads a monitored item to an existing subscription</summary>
+            <param name="subscription">The subscription</param>
+            <param name="nodeIdString">The node Id as string</param>
+            <param name="itemName">The name of the item to add</param>
+            <param name="samplingInterval">The sampling interval</param>
+            <returns>The added item</returns>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.RemoveMonitoredItem(Opc.Ua.Client.Subscription,Opc.Ua.Client.MonitoredItem)">
+            <summary>Removs a monitored item from an existing subscription</summary>
+            <param name="subscription">The subscription</param>
+            <param name="monitoredItem">The item</param>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.RemoveSubscription(Opc.Ua.Client.Subscription)">
+            <summary>Removes an existing Subscription</summary>
+            <param name="subscription">The subscription</param>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.ReadNode(System.String)">
+            <summary>Reads a node by node Id</summary>
+            <param name="nodeIdString">The node Id as string</param>
+            <returns>The read node</returns>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.__AsyncWriteValue(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.Object},System.AsyncCallback)">
+            <summary>
+            异步写
+            </summary>
+            <param name="nodeidstr">要写变量的NodeId</param>
+            <param name="values">要写变量的值</param>
+            <param name="callBack"></param>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.AsyncWriteValue(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.AsyncCallback)">
+            <summary>Writes values to node Ids</summary>
+            <param name="value">The values as strings</param>
+            <param name="nodeIdString">The node Ids as strings</param>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.ReadValues(System.Collections.Generic.List{System.String})">
+            <summary>Reads values from node Ids</summary>
+            <param name="nodeIdStrings">The node Ids as strings</param>
+            <returns>The read values as strings</returns>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.WriteValues(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
+            <summary>Writes values to node Ids</summary>
+            <param name="value">The values as strings</param>
+            <param name="nodeIdString">The node Ids as strings</param>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.ReadStructUdt(System.String)">
+            <summary>Reads a struct or UDT by node Id</summary>
+            <param name="nodeIdString">The node Id as strings</param>
+            <returns>The read struct/UDT elements as a list of string[3]; string[0] = tag name, string[1] = value, string[2] = opc data type</returns>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.WriteStructUdt(System.String,System.Collections.Generic.List{System.String[]})">
+            <summary>Writes data to a struct or UDT by node Id</summary>
+            <param name="nodeIdString">The node Id as strings</param>
+            <param name="dataToWrite">The data to write as string[3]; string[0] = tag name, string[1] = value, string[2] = opc data type</param>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.RegisterNodeIds(System.Collections.Generic.List{System.String})">
+            <summary>Registers Node Ids to the server</summary>
+            <param name="nodeIdStrings">The node Ids as strings</param>
+            <returns>The registered Node Ids as strings</returns>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.UnregisterNodeIds(System.Collections.Generic.List{System.String})">
+            <summary>Unregister Node Ids to the server</summary>
+            <param name="nodeIdStrings">The node Ids as string</param>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.GetMethodArguments(System.String)">
+            <summary>Get information about a method's input and output arguments</summary>
+            <param name="nodeIdString">The node Id of a method as strings</param>
+            <returns>Argument informations as strings</returns>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.CallMethod(System.String,System.String,System.Collections.Generic.List{System.String[]})">
+            <summary>Calls a method</summary>
+            <param name="methodIdString">The node Id as strings</param>
+            <param name="objectIdString">The object Id as strings</param>
+            <param name="inputData">The input argument data</param>
+            <returns>The list of output arguments</returns>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.Notificatio_CertificateValidation(Opc.Ua.CertificateValidator,Opc.Ua.CertificateValidationEventArgs)">
+            <summary>Eventhandler to validate the server certificate forwards this event</summary>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.Notification_MonitoredItem(Opc.Ua.Client.MonitoredItem,Opc.Ua.Client.MonitoredItemNotificationEventArgs)">
+            <summary>Eventhandler for MonitoredItemNotifications forwards this event</summary>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.Notification_KeepAlive(Opc.Ua.Client.Session,Opc.Ua.Client.KeepAliveEventArgs)">
+            <summary>Eventhandler for KeepAlive forwards this event</summary>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.CreateClientConfiguration">
+            <summary>Creats a minimal required ApplicationConfiguration</summary>
+            <param name="localIpAddress">The ip address of the interface to connect with</param>
+            <returns>The ApplicationConfiguration</returns>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.CreateEndpointDescription(System.String,System.String,Opc.Ua.MessageSecurityMode)">
+            <summary>Creats an EndpointDescription</summary>
+            <param name="url">The endpoint url</param>
+            <param name="security">Use security or not</param>
+            <returns>The EndpointDescription</returns>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.GetLocalIpAddressAndDns">
+            <summary>Gets the local IP addresses and the DNS name</summary>
+            <returns>The list of IPs and names</returns>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.ParseTypeDictionary(System.String,System.String)">
+            <summary>Parses a XML string for the a default data type</summary>
+            <param name="xmlStringToParse">The XML string containing data type information</param>
+            <param name="stringToParserFor">The data type as string to search for</param>
+            <returns>The created objects after parsing for default data type</returns>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.ParseDataToTagsFromDictionary(System.Collections.Generic.List{System.Object},System.Byte[])">
+            <summary>Parses a byte array to objects containing tag names and tag data types</summary>
+            <param name="varList">List of object containing tag names and tag data types</param>
+            <param name="byteResult">A byte array to parse</param>
+            <returns>A list of string[3]; string[0] = tag name, string[1] = value, string[2] = opc data type</returns>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.GetLengthOfDataToWrite(System.Collections.Generic.List{System.String[]})">
+            <summary>Parses a byte array to objects containing tag names and tag data types</summary>
+            <param name="dataToWrite">The data to analyze</param>
+            <returns>The length</returns>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.GetTypeDictionary(System.String,Opc.Ua.Client.Session,System.String@)">
+            <summary>Browses for the desired type dictonary to parse for containing data types</summary>
+            <param name="nodeIdString">The node Id string</param>
+            <param name="theSessionToBrowseIn">The current session to browse in</param>
+            <param name="parseString">The name of the var to parse for inside of dictionary</param>
+            <returns>The dictionary as ASCII string</returns>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+        <member name="M:Siemens.UAClientHelper.UAClientHelperAPI.ParseDataToByteArray(System.Collections.Generic.List{System.String[]},System.Int64)">
+            <summary>Parses data to write to a byte array</summary>
+            <param name="dataToWrite">The data to write as string[3]; string[0] = tag name, string[1] = value, string[2] = opc data type</param>
+            <param name="dataLength">The length of the data to write</param>
+            <returns>The parsed byte array</returns>
+            <exception cref="T:System.Exception">Throws and forwards any exception with short error description.</exception>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,12 @@
+E:\Study\OpenSource\UA-.NETStandard\SampleApplications\SDK\Opc.Ua.Server\bin\Debug\netstandard1.3\Opc.Ua.Server.deps.json
+E:\Study\OpenSource\UA-.NETStandard\SampleApplications\SDK\Opc.Ua.Server\bin\Debug\netstandard1.3\Opc.Ua.Server.dll
+E:\Study\OpenSource\UA-.NETStandard\SampleApplications\SDK\Opc.Ua.Server\bin\Debug\netstandard1.3\Opc.Ua.Server.pdb
+E:\Study\OpenSource\UA-.NETStandard\SampleApplications\SDK\Opc.Ua.Server\bin\Debug\netstandard1.3\Opc.Ua.Core.dll
+E:\Study\OpenSource\UA-.NETStandard\SampleApplications\SDK\Opc.Ua.Server\bin\Debug\netstandard1.3\Opc.Ua.Core.pdb
+E:\Study\OpenSource\UA-.NETStandard\SampleApplications\SDK\Opc.Ua.Server\obj\Debug\netstandard1.3\Opc.Ua.Server.csprojAssemblyReference.cache
+E:\Study\OpenSource\UA-.NETStandard\SampleApplications\SDK\Opc.Ua.Server\obj\Debug\netstandard1.3\Opc.Ua.Server.csproj.CoreCompileInputs.cache
+E:\Study\OpenSource\UA-.NETStandard\SampleApplications\SDK\Opc.Ua.Server\obj\Debug\netstandard1.3\Opc.Ua.Server.AssemblyInfoInputs.cache
+E:\Study\OpenSource\UA-.NETStandard\SampleApplications\SDK\Opc.Ua.Server\obj\Debug\netstandard1.3\Opc.Ua.Server.AssemblyInfo.cs
+E:\Study\OpenSource\UA-.NETStandard\SampleApplications\SDK\Opc.Ua.Server\obj\Debug\netstandard1.3\Opc.Ua.Server.csproj.CopyComplete
+E:\Study\OpenSource\UA-.NETStandard\SampleApplications\SDK\Opc.Ua.Server\obj\Debug\netstandard1.3\Opc.Ua.Server.dll
+E:\Study\OpenSource\UA-.NETStandard\SampleApplications\SDK\Opc.Ua.Server\obj\Debug\netstandard1.3\Opc.Ua.Server.pdb
