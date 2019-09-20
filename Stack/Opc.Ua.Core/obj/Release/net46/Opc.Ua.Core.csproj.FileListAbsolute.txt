@@ -51,10 +51,10 @@ E:\项目\OpcHelper\Stack\Opc.Ua.Core\bin\Release\net46\System.Security.Cryptogr
 E:\项目\OpcHelper\Stack\Opc.Ua.Core\bin\Release\net46\System.Text.Encodings.Web.dll
 E:\项目\OpcHelper\Stack\Opc.Ua.Core\bin\Release\net46\System.Threading.Tasks.Extensions.dll
 E:\项目\OpcHelper\Stack\Opc.Ua.Core\bin\Release\net46\System.Xml.ReaderWriter.dll
+E:\项目\OpcHelper\Stack\Opc.Ua.Core\obj\Release\net46\Opc.Ua.Core.csprojAssemblyReference.cache
 E:\项目\OpcHelper\Stack\Opc.Ua.Core\obj\Release\net46\Opc.Ua.Core.csproj.CoreCompileInputs.cache
 E:\项目\OpcHelper\Stack\Opc.Ua.Core\obj\Release\net46\Opc.Ua.Core.AssemblyInfoInputs.cache
 E:\项目\OpcHelper\Stack\Opc.Ua.Core\obj\Release\net46\Opc.Ua.Core.AssemblyInfo.cs
 E:\项目\OpcHelper\Stack\Opc.Ua.Core\obj\Release\net46\Opc.Ua.Core.csproj.CopyComplete
 E:\项目\OpcHelper\Stack\Opc.Ua.Core\obj\Release\net46\Opc.Ua.Core.dll
 E:\项目\OpcHelper\Stack\Opc.Ua.Core\obj\Release\net46\Opc.Ua.Core.pdb
-E:\项目\OpcHelper\Stack\Opc.Ua.Core\obj\Release\net46\Opc.Ua.Core.csprojAssemblyReference.cache

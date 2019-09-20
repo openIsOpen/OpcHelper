@@ -3,10 +3,10 @@ E:\项目\OpcHelper\SDK\Opc.Ua.Configuration\bin\Release\netstandard1.3\Opc.Ua.C
 E:\项目\OpcHelper\SDK\Opc.Ua.Configuration\bin\Release\netstandard1.3\Opc.Ua.Configuration.pdb
 E:\项目\OpcHelper\SDK\Opc.Ua.Configuration\bin\Release\netstandard1.3\Opc.Ua.Core.dll
 E:\项目\OpcHelper\SDK\Opc.Ua.Configuration\bin\Release\netstandard1.3\Opc.Ua.Core.pdb
+E:\项目\OpcHelper\SDK\Opc.Ua.Configuration\obj\Release\netstandard1.3\Opc.Ua.Configuration.csprojAssemblyReference.cache
 E:\项目\OpcHelper\SDK\Opc.Ua.Configuration\obj\Release\netstandard1.3\Opc.Ua.Configuration.csproj.CoreCompileInputs.cache
 E:\项目\OpcHelper\SDK\Opc.Ua.Configuration\obj\Release\netstandard1.3\Opc.Ua.Configuration.AssemblyInfoInputs.cache
 E:\项目\OpcHelper\SDK\Opc.Ua.Configuration\obj\Release\netstandard1.3\Opc.Ua.Configuration.AssemblyInfo.cs
 E:\项目\OpcHelper\SDK\Opc.Ua.Configuration\obj\Release\netstandard1.3\Opc.Ua.Configuration.csproj.CopyComplete
 E:\项目\OpcHelper\SDK\Opc.Ua.Configuration\obj\Release\netstandard1.3\Opc.Ua.Configuration.dll
 E:\项目\OpcHelper\SDK\Opc.Ua.Configuration\obj\Release\netstandard1.3\Opc.Ua.Configuration.pdb
-E:\项目\OpcHelper\SDK\Opc.Ua.Configuration\obj\Release\netstandard1.3\Opc.Ua.Configuration.csprojAssemblyReference.cache

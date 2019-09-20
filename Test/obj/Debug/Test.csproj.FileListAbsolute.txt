@@ -65,10 +65,3 @@ E:\项目\OpcHelper\Test\bin\Debug\Opc.Ua.Client.pdb
 E:\项目\OpcHelper\Test\bin\Debug\Opc.Ua.Core.pdb
 E:\项目\OpcHelper\Test\bin\Debug\Opc.Ua.Configuration.pdb
 E:\项目\OpcHelper\Test\bin\Debug\MQTTnet.dll
-E:\项目\OpcHelper\Test\bin\Debug\System.Net.Security.dll
-E:\项目\OpcHelper\Test\bin\Debug\System.Net.WebSockets.Client.dll
-E:\项目\OpcHelper\Test\bin\Debug\System.Net.WebSockets.dll
-E:\项目\OpcHelper\Test\bin\Debug\System.Security.Cryptography.Algorithms.dll
-E:\项目\OpcHelper\Test\bin\Debug\System.Security.Cryptography.Encoding.dll
-E:\项目\OpcHelper\Test\bin\Debug\System.Security.Cryptography.Primitives.dll
-E:\项目\OpcHelper\Test\bin\Debug\System.Security.Cryptography.X509Certificates.dll

@@ -73,7 +73,7 @@ namespace Test
             catch (Exception ee)
             {
                 Console.WriteLine(ee.Message);
-                throw;
+                //throw;
             }
         }
 
@@ -218,6 +218,7 @@ namespace Test
                     {
                         item.Value = obj.Value.ToString();
                         item.Quality = obj.Quality;
+                        item.DataType = obj.DataType;
                         item.Timesnamp = obj.Timestamp.ToString("yyyy-mm-dd HH:mm:ss:fff");
                     }
                 }

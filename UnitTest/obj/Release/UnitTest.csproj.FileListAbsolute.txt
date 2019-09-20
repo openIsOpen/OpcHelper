@@ -13,10 +13,10 @@ E:\项目\OpcHelper\UnitTest\bin\Release\UnitTest.dll.config
 E:\项目\OpcHelper\UnitTest\bin\Release\UnitTest.dll
 E:\项目\OpcHelper\UnitTest\bin\Release\UnitTest.pdb
 E:\项目\OpcHelper\UnitTest\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-E:\项目\OpcHelper\UnitTest\bin\Release\OpcDaHelper.dll
-E:\项目\OpcHelper\UnitTest\bin\Release\Opc.Ua.Core.dll
-E:\项目\OpcHelper\UnitTest\bin\Release\OpcUaClientHelper.dll
 E:\项目\OpcHelper\UnitTest\bin\Release\Opc.Ua.Client.dll
+E:\项目\OpcHelper\UnitTest\bin\Release\Opc.Ua.Configuration.dll
+E:\项目\OpcHelper\UnitTest\bin\Release\Opc.Ua.Core.dll
+E:\项目\OpcHelper\UnitTest\bin\Release\OpcDaHelper.dll
 E:\项目\OpcHelper\UnitTest\bin\Release\BouncyCastle.Crypto.dll
 E:\项目\OpcHelper\UnitTest\bin\Release\Newtonsoft.Json.dll
 E:\项目\OpcHelper\UnitTest\bin\Release\Microsoft.AspNetCore.Http.Abstractions.dll
@@ -28,7 +28,6 @@ E:\项目\OpcHelper\UnitTest\bin\Release\System.Net.Http.dll
 E:\项目\OpcHelper\UnitTest\bin\Release\Microsoft.AspNetCore.Hosting.dll
 E:\项目\OpcHelper\UnitTest\bin\Release\System.Runtime.InteropServices.RuntimeInformation.dll
 E:\项目\OpcHelper\UnitTest\bin\Release\Microsoft.AspNetCore.Http.Features.dll
-E:\项目\OpcHelper\UnitTest\bin\Release\Opc.Ua.Configuration.dll
 E:\项目\OpcHelper\UnitTest\bin\Release\System.Text.Encodings.Web.dll
 E:\项目\OpcHelper\UnitTest\bin\Release\Microsoft.Extensions.Configuration.Abstractions.dll
 E:\项目\OpcHelper\UnitTest\bin\Release\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
@@ -55,10 +54,9 @@ E:\项目\OpcHelper\UnitTest\bin\Release\Microsoft.Extensions.FileProviders.Phys
 E:\项目\OpcHelper\UnitTest\bin\Release\Microsoft.AspNetCore.WebUtilities.dll
 E:\项目\OpcHelper\UnitTest\bin\Release\Microsoft.Extensions.FileSystemGlobbing.dll
 E:\项目\OpcHelper\UnitTest\bin\Release\OpcDaHelper.pdb
-E:\项目\OpcHelper\UnitTest\bin\Release\Opc.Ua.Core.pdb
-E:\项目\OpcHelper\UnitTest\bin\Release\OpcUaClientHelper.pdb
 E:\项目\OpcHelper\UnitTest\bin\Release\Opc.Ua.Client.pdb
 E:\项目\OpcHelper\UnitTest\bin\Release\Opc.Ua.Configuration.pdb
+E:\项目\OpcHelper\UnitTest\bin\Release\Opc.Ua.Core.pdb
 E:\项目\OpcHelper\UnitTest\bin\Release\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
 E:\项目\OpcHelper\UnitTest\obj\Release\UnitTest.csprojAssemblyReference.cache
 E:\项目\OpcHelper\UnitTest\obj\Release\UnitTest.csproj.CoreCompileInputs.cache

@@ -98,9 +98,10 @@ namespace OpcDaHelper
                 if (DataChangeEvent != null)
                 {
                     Item tmpItem = Items[tmpClientHandle];
+                    tmpItem.Type = tmpItem.Instance.CanonicalDataType.ToString();
                     tmpItem.Value = tmpItemValue;
                     tmpItem.Quality = tmpQuality;
-                    tmpItem.Timesnamp = tmpTimestamps;
+                    tmpItem.Timesnamp = tmpTimestamps;                   
                     DataChangeEvent(tmpItem);
                 }
             }
@@ -175,6 +176,7 @@ namespace OpcDaHelper
             item.Group = this;
             OPCItem tmpItem = this.Instance.OPCItems.AddItem(item.Name, ClientHandle++);
             item.ServerHandle = tmpItem.ServerHandle;
+            item.Instance = tmpItem;
             Items.Add(tmpItem.ClientHandle, item);
             ItemsEx.Add(item.Name,item);
             return true;
@@ -206,6 +208,8 @@ namespace OpcDaHelper
                     //OPCItem tmpItem = Instance.OPCItems.GetOPCItem((int)serverHandle.GetValue(i));
                     int tmpServerHandle = (int)serverHandle.GetValue(i);
                     items[i - 1].ServerHandle = tmpServerHandle;
+                    //2019.09.19
+                    items[i - 1].Instance = items[i - 1].Group.Instance.OPCItems.GetOPCItem(tmpServerHandle);
                     Items.Add((int)clientHandle.GetValue(i),
                         items[i - 1]);
                     ItemsEx.Add(items[i - 1].Name, items[i - 1]);

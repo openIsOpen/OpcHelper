@@ -100,6 +100,7 @@
                     <DataGridTextColumn Header="ServerId" Binding="{Binding Path=ServerID}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Value" Binding="{Binding Path=Value}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Quality" Binding="{Binding Path=Quality}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Type" Binding="{Binding Path=DataType}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Timessnamp" Binding="{Binding Path=Timesnamp}"></DataGridTextColumn>
                 </DataGrid.Columns>
                 

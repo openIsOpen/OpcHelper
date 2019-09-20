@@ -528,6 +528,7 @@ namespace Zlw.OpcClient
             if (tag.CallBack == null) return;
             tag.Value = item.Value;
             tag.Quality = item.Quality.ToString();
+            tag.DataType = item.Type;
             tag.Timestamp = DateTime.Parse(item.Timesnamp.ToString());
             tag.CBType = TagItem.CallBackType.Subscription;
             tag.CallBack(tag);

@@ -1,5 +1,6 @@
-E:\项目\OpcHelper\OpcUA_DAClient\obj\Release\OpcUA_DAClient.csprojAssemblyReference.cache
-E:\项目\OpcHelper\OpcUA_DAClient\obj\Release\OpcUA_DAClient.csproj.CoreCompileInputs.cache
+E:\项目\OpcHelper\OpcUA_DAClient\bin\Release\Set.Config.xml
+E:\项目\OpcHelper\OpcUA_DAClient\bin\Release\OpcUA_DAClient.dll.config
+E:\项目\OpcHelper\OpcUA_DAClient\bin\Release\OpcUA_DAClient.xml
 E:\项目\OpcHelper\OpcUA_DAClient\bin\Release\OpcUA_DAClient.dll
 E:\项目\OpcHelper\OpcUA_DAClient\bin\Release\OpcUA_DAClient.pdb
 E:\项目\OpcHelper\OpcUA_DAClient\bin\Release\Opc.Ua.Client.dll
@@ -13,6 +14,7 @@ E:\项目\OpcHelper\OpcUA_DAClient\bin\Release\Microsoft.AspNetCore.Hosting.Abst
 E:\项目\OpcHelper\OpcUA_DAClient\bin\Release\Microsoft.AspNetCore.Server.Kestrel.Https.dll
 E:\项目\OpcHelper\OpcUA_DAClient\bin\Release\Microsoft.AspNetCore.Server.Kestrel.dll
 E:\项目\OpcHelper\OpcUA_DAClient\bin\Release\Microsoft.Extensions.Primitives.dll
+E:\项目\OpcHelper\OpcUA_DAClient\bin\Release\System.Net.Http.dll
 E:\项目\OpcHelper\OpcUA_DAClient\bin\Release\Microsoft.AspNetCore.Hosting.dll
 E:\项目\OpcHelper\OpcUA_DAClient\bin\Release\System.Runtime.InteropServices.RuntimeInformation.dll
 E:\项目\OpcHelper\OpcUA_DAClient\bin\Release\Microsoft.AspNetCore.Http.Features.dll
@@ -45,10 +47,8 @@ E:\项目\OpcHelper\OpcUA_DAClient\bin\Release\OpcDaHelper.pdb
 E:\项目\OpcHelper\OpcUA_DAClient\bin\Release\Opc.Ua.Client.pdb
 E:\项目\OpcHelper\OpcUA_DAClient\bin\Release\Opc.Ua.Configuration.pdb
 E:\项目\OpcHelper\OpcUA_DAClient\bin\Release\Opc.Ua.Core.pdb
+E:\项目\OpcHelper\OpcUA_DAClient\obj\Release\OpcUA_DAClient.csprojAssemblyReference.cache
+E:\项目\OpcHelper\OpcUA_DAClient\obj\Release\OpcUA_DAClient.csproj.CoreCompileInputs.cache
 E:\项目\OpcHelper\OpcUA_DAClient\obj\Release\OpcUA_DAClient.csproj.CopyComplete
 E:\项目\OpcHelper\OpcUA_DAClient\obj\Release\OpcUA_DAClient.dll
 E:\项目\OpcHelper\OpcUA_DAClient\obj\Release\OpcUA_DAClient.pdb
-E:\项目\OpcHelper\OpcUA_DAClient\bin\Release\Set.Config.xml
-E:\项目\OpcHelper\OpcUA_DAClient\bin\Release\OpcUA_DAClient.xml
-E:\项目\OpcHelper\OpcUA_DAClient\bin\Release\OpcUA_DAClient.dll.config
-E:\项目\OpcHelper\OpcUA_DAClient\bin\Release\System.Net.Http.dll

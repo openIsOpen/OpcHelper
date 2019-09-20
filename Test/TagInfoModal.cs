@@ -17,6 +17,7 @@ namespace Test
         private string _Value;
         private string _Quality;
         private string _Timesnamp;
+        private string _DataType;
         public event PropertyChangedEventHandler PropertyChanged;
 
         [NotifyPropertyChangedInvocator]
@@ -67,6 +68,18 @@ namespace Test
                 _Quality = value;
                 OnPropertyChanged();
             }
+        }
+
+        public string DataType
+        {
+            get => _DataType;
+            set
+            {
+                if (value == _DataType) return;
+                _DataType = value;
+                OnPropertyChanged();
+            }
+
         }
 
         public string Timesnamp

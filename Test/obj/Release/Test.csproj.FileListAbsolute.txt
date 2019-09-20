@@ -2,6 +2,7 @@ E:\项目\OpcHelper\Test\bin\Release\Set.Config.xml
 E:\项目\OpcHelper\Test\bin\Release\Test.exe.config
 E:\项目\OpcHelper\Test\bin\Release\Test.exe
 E:\项目\OpcHelper\Test\bin\Release\Test.pdb
+E:\项目\OpcHelper\Test\bin\Release\MQTTnet.dll
 E:\项目\OpcHelper\Test\bin\Release\OpcUA_DAClient.dll
 E:\项目\OpcHelper\Test\bin\Release\Opc.Ua.Client.dll
 E:\项目\OpcHelper\Test\bin\Release\Opc.Ua.Core.dll
@@ -65,11 +66,3 @@ E:\项目\OpcHelper\Test\obj\Release\Test.csproj.CoreCompileInputs.cache
 E:\项目\OpcHelper\Test\obj\Release\Test.csproj.CopyComplete
 E:\项目\OpcHelper\Test\obj\Release\Test.exe
 E:\项目\OpcHelper\Test\obj\Release\Test.pdb
-E:\项目\OpcHelper\Test\bin\Release\MQTTnet.dll
-E:\项目\OpcHelper\Test\bin\Release\System.Net.Security.dll
-E:\项目\OpcHelper\Test\bin\Release\System.Net.WebSockets.Client.dll
-E:\项目\OpcHelper\Test\bin\Release\System.Net.WebSockets.dll
-E:\项目\OpcHelper\Test\bin\Release\System.Security.Cryptography.Algorithms.dll
-E:\项目\OpcHelper\Test\bin\Release\System.Security.Cryptography.Encoding.dll
-E:\项目\OpcHelper\Test\bin\Release\System.Security.Cryptography.Primitives.dll
-E:\项目\OpcHelper\Test\bin\Release\System.Security.Cryptography.X509Certificates.dll

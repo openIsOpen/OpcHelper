@@ -11,7 +11,7 @@ namespace OpcDaHelper
     public class Item
     {
         private List<object> _Extension = new List<object>();
-        /*
+
         private OPCItem _Instance;
         public OPCItem Instance
         {
@@ -19,11 +19,9 @@ namespace OpcDaHelper
             set
             {
                 _Instance = value;
-                _Instance.IsActive = IsActive;
+                //_Instance.IsActive = IsActive;
             }
         }
-         *
-         */
 
         public string Id { get; set; }
 

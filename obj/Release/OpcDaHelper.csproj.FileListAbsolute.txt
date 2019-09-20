@@ -26,9 +26,9 @@ E:\项目\OpcDaHelper\obj\Release\OpcDaHelper.pdb
 E:\项目\OpcDaHelper\obj\Release\OpcDaHelper.csprojAssemblyReference.cache
 E:\项目\OpcHelper\bin\Release\OpcDaHelper.dll
 E:\项目\OpcHelper\bin\Release\OpcDaHelper.pdb
+E:\项目\OpcHelper\obj\Release\OpcDaHelper.csprojAssemblyReference.cache
 E:\项目\OpcHelper\obj\Release\Interop.OPCAutomation.dll
 E:\项目\OpcHelper\obj\Release\OpcDaHelper.csproj.ResolveComReference.cache
 E:\项目\OpcHelper\obj\Release\OpcDaHelper.csproj.CoreCompileInputs.cache
 E:\项目\OpcHelper\obj\Release\OpcDaHelper.dll
 E:\项目\OpcHelper\obj\Release\OpcDaHelper.pdb
-E:\项目\OpcHelper\obj\Release\OpcDaHelper.csprojAssemblyReference.cache

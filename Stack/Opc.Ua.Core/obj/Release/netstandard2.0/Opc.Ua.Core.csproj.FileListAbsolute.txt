@@ -1,9 +1,9 @@
 E:\项目\OpcHelper\Stack\Opc.Ua.Core\bin\Release\netstandard2.0\Opc.Ua.Core.deps.json
 E:\项目\OpcHelper\Stack\Opc.Ua.Core\bin\Release\netstandard2.0\Opc.Ua.Core.dll
 E:\项目\OpcHelper\Stack\Opc.Ua.Core\bin\Release\netstandard2.0\Opc.Ua.Core.pdb
+E:\项目\OpcHelper\Stack\Opc.Ua.Core\obj\Release\netstandard2.0\Opc.Ua.Core.csprojAssemblyReference.cache
 E:\项目\OpcHelper\Stack\Opc.Ua.Core\obj\Release\netstandard2.0\Opc.Ua.Core.csproj.CoreCompileInputs.cache
 E:\项目\OpcHelper\Stack\Opc.Ua.Core\obj\Release\netstandard2.0\Opc.Ua.Core.AssemblyInfoInputs.cache
 E:\项目\OpcHelper\Stack\Opc.Ua.Core\obj\Release\netstandard2.0\Opc.Ua.Core.AssemblyInfo.cs
 E:\项目\OpcHelper\Stack\Opc.Ua.Core\obj\Release\netstandard2.0\Opc.Ua.Core.dll
 E:\项目\OpcHelper\Stack\Opc.Ua.Core\obj\Release\netstandard2.0\Opc.Ua.Core.pdb
-E:\项目\OpcHelper\Stack\Opc.Ua.Core\obj\Release\netstandard2.0\Opc.Ua.Core.csprojAssemblyReference.cache
